@@ -4,10 +4,10 @@
 
 
 <div align="center">
-<img src="./Geo-R-Main.pdf" width="900"/>
+<img src="./Geo-R.png" width="900"/>
 <div>
   <font size=4>
-    <p>🎉  <b> Geo_R  </b></p>
+    <p>🎉  <b> Overview of Geo-R for image geolocation. Given a query image, the agent generates a region-level reasoning chain grounded in geographic knowledge, followed by coordinate prediction. The framework integrates structured prompting, multi-modal understanding, and reinforcement optimization to enhance both interpretability and spatial accuracy.  </b></p>
   </font>
 </div>
 </div>

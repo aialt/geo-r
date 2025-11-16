@@ -4,7 +4,7 @@
 
 
 <div align="center">
-<img src="./assets/performance4.png" width="900"/>
+<img src="./Geo-R-Main.pdf" width="900"/>
 <div>
   <font size=4>
     <p>🎉  <b> Geo_R  </b></p>

@@ -1,14 +1,13 @@
-# VLM-R1: A stable and generalizable R1-style Large Vision-Language Model
+# Vision-Language Reasoning for Geolocalization: A Deep Reinforcement Learning Approach
 
-<font size=4><div align='center' > [[🤗 REC Demo](https://huggingface.co/spaces/omlab/VLM-R1-Referral-Expression)] [[🤗 OVD Demo](https://huggingface.co/spaces/omlab/VLM-R1-OVD)] [[🤗 REC Data](https://huggingface.co/datasets/omlab/VLM-R1)] [[🤗 Checkpoints](https://huggingface.co/collections/omlab/vlm-r1-models-67b7352db15c19d57157c348)] </div></font>
 
-<font size=4><div align='center'>[[📄 Tech Report](https://arxiv.org/abs/2504.07615)] [[📝 Blog](https://om-ai-lab.github.io/index.html)]</div></font>
+
 
 <div align="center">
 <img src="./assets/performance4.png" width="900"/>
 <div>
   <font size=4>
-    <p>🎉  <b>Our VLM-R1 Math model reaches the top of the Open-Compass Math Leaderboard (under 4B parameters) and OVD model achieves the state-of-the-art performance on OVDEval.</b></p>
+    <p>🎉  <b> Geo_R  </b></p>
   </font>
 </div>
 </div>
@@ -82,10 +81,6 @@ We would like to express our sincere gratitude to [DeepSeek](https://github.com/
 If you find this project useful, welcome to cite us.
 
 ```bib
-@article{shen2025vlm,
-  title={Vlm-r1: A stable and generalizable r1-style large vision-language model},
-  author={Shen, Haozhan and Liu, Peng and Li, Jingcheng and Fang, Chunxin and Ma, Yibo and Liao, Jiajia and Shen, Qiaoli and Zhang, Zilun and Zhao, Kangjia and Zhang, Qianqian and Xu, Ruochen and Zhao, Tiancheng },
-  journal={arXiv preprint arXiv:2504.07615},
-  year={2025}
-}
+
+
 ```

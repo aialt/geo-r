@@ -22,9 +22,52 @@ conda create -n Geo-R python=3.10
 conda activate Geo-R
 bash setup.sh
 ```
- 
+
+
+
+
+
+
 ## 💪🏻 Training
- 
+
+### Referring Expression Comprehension (REC)
+
+#### 📚 GRPO
+
+1. Download the Our RL Data and unzip it, and we refer to the image dir as `<your_image_root>`. 
+2. Change the `data_paths` and `image_folders` in the [run_scripts/run_grpo_rec.sh](run_scripts/run_grpo_rec.sh) file.
+
+```bash
+# These jsonl files are included in the annotation files at step 2.
+# Note: please use jsonl files instead of json files.
+data_paths="path/to/GEO_R_Train.json"
+image_folders="path/to/GEO-R"
+```
+
+4. ``bash run_scripts/run_grpo_rec.sh``
+
+> [!NOTE]
+> If you encounter 'CUDA out of memory' error, you can try to reduce the `per_device_train_batch_size`.
+
+
+
+#### 📚 SFT
+
+We use [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) to train the SFT model.
+
+1. Clone the [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) repository and install the dependencies.
+
+```bash
+git clone https://github.com/hiyouga/LLaMA-Factory.git
+cd LLaMA-Factory
+pip install -e ".[torch,metrics]"
+```
+
+2. Download the dataset_info.json, mllm_rec_json.json, and qwen2_5_vl_full_sft.yaml we provided [here](https://huggingface.co/datasets/omlab/VLM-R1/tree/main/sft_related). Put the json files in the `LLaMA-Factory/data` directory and the yaml file in the `LLaMA-Factory/examples/train_full` directory.
+3. Run the following command to train the SFT model.
+
+```bash
+llamafactory-cli train examples/train_full/qwen2_5_vl_full_sft.yaml
 ```
 
 ### For your own data
@@ -60,7 +103,20 @@ If you want to use multi-image input, you can use the following format:
   ]
 }
 ```
- 
+
+> [!NOTE]
+> The image path in the jsonl file should be relative to the image folder specified in `--image_folders`. The absolute path of the input image is constructed as `os.path.join(image_folder, data['image'])`. For example:
+
+- If your jsonl has `"image": "folder1/image1.jpg"`
+- And you specify `--image_folders "/path/to/images/"`
+- The full image path will be `/path/to/images/folder1/image1.jpg`
+
+Multiple data files and image folders can be specified using ":" as a separator:
+
+```bash
+--data_file_paths /path/to/data1.jsonl:/path/to/data2.jsonl \
+--image_folders /path/to/images1/:/path/to/images2/
+```
 
 The script can be run like this:
 
@@ -81,6 +137,8 @@ torchrun --nproc_per_node="8" \
 ```
 
 <div style="text-align: justify;">
+
+
  
 ## 🤝 Acknowledgements
 

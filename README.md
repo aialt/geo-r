@@ -12,6 +12,16 @@
 </div>
 </div>
 
+
+
+
+## 🛠️ Setup
+
+```bash
+conda create -n Geo-R python=3.10
+conda activate Geo-R
+bash setup.sh
+```
  
 ## 💪🏻 Training
  

@@ -1,5 +1,5 @@
 # Vision-Language Reasoning for Geolocalization: A Deep Reinforcement Learning Approach
-
+AAAI 2026
 
 
 
@@ -149,6 +149,11 @@ We would like to express our sincere gratitude to [DeepSeek](https://github.com/
 If you find this project useful, welcome to cite us.
 
 ```bib
-
+@inproceedings{wu2026vision,
+  title={Vision-Language Reasoning for Geolocalization: A Reinforcement Learning Approach},
+  author={Wu, Biao and Fang, Meng and Chen, Ling and Xu, Ke and Cheng, Tao and Wang, Jun},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  year={2026}
+}
 
 ```

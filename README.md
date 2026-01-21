@@ -28,6 +28,8 @@ bash setup.sh
 ## Dataset
 
 ### Train Datasets
+We provide the training JSON files; however, the corresponding image files need to be obtained from MP16-Pro.
+
 MP16-Pro: [Huggingface](https://huggingface.co/datasets/Jia-py/MP16-Pro)
 
 SFT Data: [Huggingface](https://huggingface.co/The-Shy/Geo-R/resolve/main/geocoded_prompts_part_rand_1000k_recover.json)

@@ -25,6 +25,20 @@ bash setup.sh
 
 
 
+## Dataset
+
+### Train Datasets
+MP16-Pro: [Huggingface](https://huggingface.co/datasets/Jia-py/MP16-Pro)
+SFT Data: [Huggingface](https://huggingface.co/The-Shy/Geo-R/resolve/main/geocoded_prompts_part_rand_1000k_recover.json)
+RL Data:  [Huggingface](https://huggingface.co/The-Shy/Geo-R/resolve/main/geocoded_prompts_part_rand_1000k_recover_R1.json)
+
+Qwen-VL-2.5-7B After 500k SFT : [Huggingface](https://huggingface.co/The-Shy/Geo-R/resolve/main/Qwen2.5-VL-7B-Instruct-Rand500k.zip)
+
+### Evaluation Datasets
+
+IM2GPS3K: [images](http://www.mediafire.com/file/7ht7sn78q27o9we/im2gps3ktest.zip) and [metadata](https://raw.githubusercontent.com/TIBHannover/GeoEstimation/original_tf/meta/im2gps3k_places365.csv); YFCC4K: [images](http://www.mediafire.com/file/3og8y3o6c9de3ye/yfcc4k.zip) and [metadata](https://github.com/TIBHannover/GeoEstimation/releases/download/pytorch/yfcc25600_places365.csv); 
+You can also find the meta data for IM2GPS3K, YFCC4K, retrieval checkpoints of G3, retrieval index in [Huggingface](https://huggingface.co/Jia-py/G3-checkpoint)
+
 
 
 
